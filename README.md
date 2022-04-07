@@ -1,0 +1,2 @@
+# resume_builder
+This Online resume builder is designed to help the job seekers to creates a professional resume for them. The candidates are not required to spend more time designing and creating professional cv. They can enter their details directly into the pop-up box and their resume will be created automatically. A well-structured resume will be generated, once the user submits his/her details and user can download it in any file format, as per his/her requirement.
