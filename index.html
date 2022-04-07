@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <title>Resume module</title>
+</head>
+<body>
+    <div class="container" id="cv-form">
+<h1 class="text-center my-2">resume module</h1>
+<p class="text-center">by harsh</p>
+<div class="row">
+<div class="col-md-6">
+<h3>personal information</h3>
+<div class="form-group">
+<label for="namefield">Name</label>
+<input type="text" id="namefield" placeholder="Enter here" class="form-control">
+
+</div>
+<div class="form-group mt-2">
+    <label for="contactfield">contact number</label>
+    <input type="text" id="contactfield" placeholder="Enter here" class="form-control">
+    
+    </div>
+    <div class="form-group">
+        <label for="addressfield">Address:</label>
+        <textarea  id="addressfield" placeholder="Enter here" class="form-control"></textarea>
+        
+        </div>
+<div class="form-group mt-4">
+    <label for="">select profile picture</label>
+<input id="imgfield" type="file" class="form-control">
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+        <div class="form-group">
+            <label for="aboutfield">About yourself:</label>
+            <textarea  id="aboutfield" placeholder="Enter here" class="form-control"rows="7"></textarea>
+            
+            </div>
+            <p class="text-secondry mt-4">important links</p>
+
+            <div class="form-group mt-2">
+                <label for="fbfield">facebook </label>
+                <input type="text" id="fbfield" placeholder="Enter here" class="form-control">
+                
+                </div>
+                <div class="form-group mt-2">
+                    <label for="instafield">instagram</label>
+                    <input type="text" id="instafield" placeholder="Enter here" class="form-control">
+                    
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="linkedinfield">linkedin</label>
+                        <input type="text" id="linkedinfield" placeholder="Enter here" class="form-control">
+                        
+                        </div>
+            
+</div>
+<div class="col-md-6">
+<h3>professsional information</h3>
+<div class="form-group" id="we">
+    <label for="">internships:</label>
+    <textarea  placeholder="Enter here" class="form-control wefield" rows="3"></textarea>
+
+
+
+    <div class="container text-center mt-3" id="weAddbutton"><button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+
+
+    </div>
+    
+    </div>
+
+
+
+
+    <div class="form-group mt-2" id="aq">
+        <label for="">academic qualifications:</label>
+        <textarea   placeholder="Enter here" class="form-control eqfield" rows="3"></textarea>
+        <div class="container text-center mt-3" id="aqAddbutton"><button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+    
+    
+        </div>
+        
+        </div>
+
+</div>
+
+</div>
+<div class="container text-center mt-3">
+    <button onclick="generatecv()" class="btn btn-primary btn-lg">submit</button>
+</div>
+</div>
+
+
+
+<div class="container" id="cv-template">
+<div class="row">
+    <div class="col-md-4 text-center py-5 background">
+    <!--first colloum-->
+<img src="apna cv.jpj.jpg" alt="" class="img-fluid myimg" id="imgT">
+
+
+<div class="container">
+<p id="nameT1">harsh kumar shukla</p>
+<p id="contactT">+916260931885,+9122345678</p>
+<p id="addressT">plot 575 sada colony jamnipali</p>
+
+<hr>
+
+<p><a id="fbT" href="#1">https://www.facebook.com/withharsh</a></p>
+<p><a  id="instaT" href="#1">https://www.instagram.com/withharsh</a></p>
+<p><a id="linkedT"href="#1">https://www.linkedin.com/withharsh</a></p>
+
+</div>
+</div>
+
+
+
+
+    <div class="col-md-8 py-5 ">
+    <!--second collum-->
+    <h1 id="nameT2"class="text-center" style="font-weight: 800;">harsh kumar shukla</h1>
+    <!--objective card-->
+    <div class="card mt-4">
+        <div class="card-header background">
+<h3>about</h3>
+
+
+
+
+
+        </div>
+        <div class="card-body "></div>
+        <p id="aboutT">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut saepe, cumque quibusdam ullam porro molestias accusantium recusandae aspernatur dignissimos nesciunt, numquam ipsam ex aut autem velit tempora minima libero. Cupiditate, nam! Autem, explicabo? Quia voluptate alias nostrum aut cum dolor ex. Ipsa iste expedita delectus fugit nesciunt, necessitatibus repudiandae omnis.</p>
+    </div>
+</div>
+<!--internships done-->
+<div class="card mt-4">
+    <div class="card-header background">
+<h3>internships</h3>
+
+
+
+
+
+    </div>
+    <div class="card-body">
+    <ul id="weT">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sed?</li>
+    </ul>
+    <ul>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, molestias!</li>
+    </ul>
+     <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, at.</li>
+    </ul>
+</div>
+</div>
+<!--academic-->
+<div class="card mt-4">
+    <div class="card-header background">
+<h3>academic qualifications</h3>
+
+
+
+
+
+    </div>
+    <div class="card-body">
+    <ul id="aqT">
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quas!</li>
+    </ul>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quas!</li>
+    </ul> <ul>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quas!</li>
+    </ul>
+</div>
+</div>
+<div class="container mt-3 text-center">
+<button onclick="printcv()" class="btn background">
+    print
+</button>
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
